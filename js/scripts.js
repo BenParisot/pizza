@@ -23,9 +23,9 @@ Order.prototype.pricing = function() {
 		this.price = this.price + 0;
 	}
 	else if (numberToppings.length > 3) {
-		forEach(function(numberToppings.length) {
-			
-		});
+		for (var index = 0; index < numberToppings.length - 3; index += 1) {
+			this.price = this.price + 1;
+		}
 	}
 };
 
