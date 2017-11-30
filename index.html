@@ -9,34 +9,37 @@
 	</head>
 	<body>
 		<div class="container">
+		<div class="jumbotron">
+			<h1>Ben's Pizza Place</h1>
+		</div>
 		<form id="order">
 			<div class="form-group">
-				<label for="name">Your Name</lable>
+				<h3>Your Name</h3>
 				<input id="name" type="text" class="form-control">
 			</div>
 			<div class="form-group">
-				<label for="address">Your Address</label>
+				<h3>Your Address</h3>
 				<input id="address" type="text" class="form-control">
 			</div>
 			<div class="form-group">
-				<label for="size">Pie Size</label>
-				<input id="small" type="radio" value="Small">Small<br>
-				<input id="medium" type="radio" value="edium">Medium<br>
-				<input id="large" type="radio" value="Large">Large<br>
+				<h3>Pie Size</h3>
+				<input type="radio" name="size" value="Small"> Small<br>
+				<input type="radio" name="size" value="Medium"> Medium<br>
+				<input type="radio" name="size" value="Large"> Large<br>
 
 			</div>
 			<div class="form-group">
-				<label for="name">Toppings</label>
-					<input id="cheese" type="checkbox" value="Cheese">Cheese<br>
-					<input id="pepperoni" type="checkbox" value="Pepperoni">Pepperoni<br>
-					<input id="sausage" type="checkbox" value="Sausage">Sausage<br>
-					<input id="anchovies" type="checkbox" value="Anchovies">Anchovies<br>
-					<input id="peppers" type="checkbox" value="Peppers">Bell Peppers<br>
-					<input id="basil" type="checkbox" value="Basil">Basil<br>
-					<input id="garlic" type="checkbox" value="Garlic">Roasted Garlic<br>
-					<input id="onion" type="checkbox" value="Onion">Red Onion<br>
-					<input id="tomato" type="checkbox"  value="Tomato"> Roasted Tomato<br>
-					<input id="chicken" type="checkbox" value="Chicken"> BBQ Chicken<br>
+				<h3>Pick Your Toppings Wisely</h3>
+					<input type="checkbox" name="toppings" value="Cheese"> Cheese<br>
+					<input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+					<input type="checkbox" name="toppings" value="Sausage"> Sausage<br>
+					<input type="checkbox" name="toppings" value="Anchovies"> Anchovies<br>
+					<input type="checkbox" name="toppings" value="Peppers"> Bell Peppers<br>
+					<input type="checkbox" name="toppings" value="Basil"> Basil<br>
+					<input type="checkbox" name="toppings" value="Garlic"> Roasted Garlic<br>
+					<input type="checkbox" name="toppings" value="Onion"> Red Onion<br>
+					<input type="checkbox" name="toppings" value="Tomato"> Roasted Tomato<br>
+					<input type="checkbox" name="toppings" value="Chicken"> BBQ Chicken<br>
 			</div>
 			<button id="submit" type="submit" class="btn btn-danger">Order That Pie!</button>
 		</form>
