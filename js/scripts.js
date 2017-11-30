@@ -23,8 +23,10 @@ Order.prototype.pricing = function() {
 		this.price = this.price + 0;
 	}
 	else {
-		this.price = this.price + 1;
-	}
+		var toppingsLength = numberToppings.length - 3;
+		console.log(toppingsLength);
+		}
+
 };
 
 // front end logic
