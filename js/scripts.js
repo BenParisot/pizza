@@ -22,11 +22,10 @@ Order.prototype.pricing = function() {
 	if (numberToppings.length <= 3) {
 		this.price = this.price + 0;
 	}
-	else {
-		var toppingsLength = [numberToppings.length - 3];
-		for (i = 0; i == toppingsLength - 3; i++) {
-			alert("yes!");
-		}
+	else if (numberToppings.length > 3) {
+		forEach(function(numberToppings.length) {
+			
+		});
 	}
 };
 
