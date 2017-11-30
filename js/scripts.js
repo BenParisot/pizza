@@ -16,13 +16,13 @@ Order.prototype.pricing = function() {
 	else if (this.size === "Medium") {
 		this.price = this.price + 20;
 	}
-	else if (this.size === "Large") {
+	else {
 		this.price = this.price + 25;
 	}
 	if (numberToppings.length <= 3) {
 		this.price = this.price + 0;
 	}
-	else if (numberToppings.length > 3) {
+	else {
 		for (var index = 0; index < numberToppings.length - 3; index += 1) {
 			this.price = this.price + 1;
 		}
