@@ -23,10 +23,11 @@ Order.prototype.pricing = function() {
 		this.price = this.price + 0;
 	}
 	else {
-		var toppingsLength = numberToppings.length - 3;
-		console.log(toppingsLength);
+		var toppingsLength = [numberToppings.length - 3];
+		for (i = 0; i == toppingsLength - 3; i++) {
+			alert("yes!");
 		}
-
+	}
 };
 
 // front end logic
@@ -47,5 +48,4 @@ $(document).ready(function() {
 		console.log(newOrder);
 
 	});
-
 });
