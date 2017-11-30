@@ -9,7 +9,24 @@ function Order(name, address, size, toppings, price) {
 	this.price = 0;
 };
 
-// var tipToppings = [];
+Order.prototype.pricing = function() {
+	if (this.size === "Small") {
+		this.price = this.price + 15;
+	}
+	else if (this.size === "Medium") {
+		this.price = this.price + 20;
+	}
+	else if (this.size === "Large") {
+		this.price = this.price + 25;
+	}
+	if (numberToppings.length <= 3) {
+		this.price = this.price + 0;
+	}
+	else {
+		this.price = this.price + 1;
+	}
+};
+
 // front end logic
 
 $(document).ready(function() {
@@ -24,6 +41,7 @@ $(document).ready(function() {
 		});
 
 		newOrder = new Order(inputtedName, inputtedAddress, inputtedSize, numberToppings);
+		newOrder.pricing();
 		console.log(newOrder);
 
 	});
