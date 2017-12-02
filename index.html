@@ -9,57 +9,56 @@
 	</head>
 	<body>
 		<div class="container">
-		<div class="jumbotron">
-			<h1>Ben's Pizza Place</h1>
-			<h2>Come and get a slice.</h2>
-		</div>
-		<div class="row">
-			<div class="col-md-7" id="order-form">
-				<form id="order">
-					<div class="form-group">
-						<h3>Your Name</h3>
-						<input id="name" type="text" class="form-control">
-					</div>
-					<div class="form-group">
-						<h3>Your Address</h3>
-						<input id="address" type="text" class="form-control">
-					</div>
-					<div class="form-group">
-						<h3>Pie Size</h3>
-						<input type="radio" name="size" value="Small"> Small - $15<br>
-						<input type="radio" name="size" value="Medium"> Medium - $20<br>
-						<input type="radio" name="size" value="Large"> Large - $25<br>
-
-					</div>
-					<div class="form-group">
-						<h3>Pick Your Toppings Wisely</h3>
-						<p>Three for free, then just $1 per topping after that.</p>
-							<input type="checkbox" name="toppings" value="Cheese"> Cheese<br>
-							<input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-							<input type="checkbox" name="toppings" value="Sausage"> Sausage<br>
-							<input type="checkbox" name="toppings" value="Anchovies"> Anchovies<br>
-							<input type="checkbox" name="toppings" value="Peppers"> Bell Peppers<br>
-							<input type="checkbox" name="toppings" value="Basil"> Basil<br>
-							<input type="checkbox" name="toppings" value="Garlic"> Roasted Garlic<br>
-							<input type="checkbox" name="toppings" value="Onion"> Red Onion<br>
-							<input type="checkbox" name="toppings" value="Tomato"> Roasted Tomato<br>
-							<input type="checkbox" name="toppings" value="Chicken"> BBQ Chicken<br>
-					</div>
-					<button id="submit" type="submit" class="btn">Order That Pie!</button>
-				</form>
+			<div class="jumbotron">
+				<h1>Ben's Pizza Place</h1>
+				<h2>Come and get a slice.</h2>
 			</div>
-			<div class="col-md-4" id="results-col">
-				<div id="results">
-					<h3>Confirm Your Order:</h3>
-					<div id="show-name"></div>
-					<div id="show-address"></div>
-					<div id="show-size"></div>
-					<div id="show-toppings"></div>
-					<div id="show-price"></div>
-					<button id="place-order" class="btn">Looks Good!</button>
+			<div class="row">
+				<div class="col-md-7" id="order-form">
+					<form id="order">
+						<div class="form-group">
+							<h3>Your Name</h3>
+							<input id="name" type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<h3>Your Address</h3>
+							<input id="address" type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<h3>Pie Size</h3>
+							<input type="radio" name="size" value="Small"> Small - $15<br>
+							<input type="radio" name="size" value="Medium"> Medium - $20<br>
+							<input type="radio" name="size" value="Large"> Large - $25<br>
+						</div>
+						<div class="form-group">
+							<h3>Pick Your Toppings Wisely</h3>
+							<p>Three for free, then just $1 per topping after that.</p>
+								<input type="checkbox" name="toppings" value="Cheese"> Cheese<br>
+								<input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+								<input type="checkbox" name="toppings" value="Sausage"> Sausage<br>
+								<input type="checkbox" name="toppings" value="Anchovies"> Anchovies<br>
+								<input type="checkbox" name="toppings" value="Peppers"> Bell Peppers<br>
+								<input type="checkbox" name="toppings" value="Basil"> Basil<br>
+								<input type="checkbox" name="toppings" value="Garlic"> Roasted Garlic<br>
+								<input type="checkbox" name="toppings" value="Onion"> Red Onion<br>
+								<input type="checkbox" name="toppings" value="Tomato"> Roasted Tomato<br>
+								<input type="checkbox" name="toppings" value="Chicken"> BBQ Chicken<br>
+						</div>
+						<button id="submit" type="submit" class="btn">Order That Pie!</button>
+					</form>
+				</div>
+				<div class="col-md-4" id="results-col">
+						<h3>Confirm Your Order:</h3>
+						<div id="results">
+						<p><b>Your Name: </b><em id="show-name"></em></p>
+						<p><b>Your Address: </b><em id="show-address"></em></p>
+						<p><b>Size: </b><em id="show-size"></em></p>
+						<p><b>Toppings: </b><em id="show-toppings"></em></p>
+						<p><b>Price: </b>$<em id="show-price"></em></p>
+						<button id="place-order" class="btn">Looks Good!</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</body>
 </html>

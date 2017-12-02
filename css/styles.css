@@ -2,6 +2,11 @@ body {
   background-image: url("../img/background.jpg");
 }
 
+.jumbotron {
+	background-color: rgba(255, 250, 138, .9);
+	text-align: center;
+}
+
 .jumbotron h1 {
 	color: black;
 	font-size: 100px;
@@ -12,11 +17,15 @@ body {
 	font-size: 40px;
 }
 
-.jumbotron {
-	background-color: rgba(255, 250, 138, .9);
-	text-align: center;
+.btn {
+	background-color: #ce0000;
+	color: white;
 }
 
+.btn:hover {
+	color: white;
+	background-color: #e12301;
+}
 #order-form {
 	background-color: rgba(255, 250, 138, .9);
 	padding: 35px;
@@ -33,7 +42,10 @@ body {
 	font-size: 16px;
 }
 
-.btn {
-	background-color: #ce0000;
-	color: white;
+#results {
+	display: none;
+}
+
+#result #place-order {
+	margin-top: 15px;
 }

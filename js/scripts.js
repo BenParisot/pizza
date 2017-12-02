@@ -30,7 +30,6 @@ Order.prototype.pricing = function() {
 };
 
 // front end logic
-
 $(document).ready(function() {
 	$("form#order").submit(function(event) {
 		event.preventDefault();
@@ -39,19 +38,23 @@ $(document).ready(function() {
 		var inputtedSize = $("input:radio[name=size]:checked").val();
 		$("input:checkbox[name=toppings]:checked").each(function() {
 			var inputtedToppings = $(this).val();
-			numberToppings.push(inputtedToppings);
+			numberToppings.push(" " + inputtedToppings);
 		});
 
 		newOrder = new Order(inputtedName, inputtedAddress, inputtedSize, numberToppings);
+		console.log(newOrder);
 		newOrder.pricing();
-		$("#show-name").text("Your Name: " + newOrder.name);
-		$("#show-address").text("Your Address: " + newOrder.address);
-		$("#show-size").text("Size: " + newOrder.size);
-		$("#show-toppings").text("Toppings: " + newOrder.toppings);
-		$("#show-price").text("Price: " + newOrder.price);
+		$("#show-name").text(newOrder.name);
+		$("#show-address").text(newOrder.address);
+		$("#show-size").text(newOrder.size);
+		$("#show-toppings").text(newOrder.toppings);
+		$("#show-price").text(newOrder.price);
+		$("#results").show();
 	});
 
+
 	$("#place-order").click(function() {
+		alert("Thanks for your order! We'll be at your door in 30 minutes or less.");
 		location.reload();
 	});
 });
