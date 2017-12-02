@@ -16,13 +16,13 @@ Order.prototype.pricing = function() {
 	else if (this.size === "Medium") {
 		this.price = this.price + 20;
 	}
-	else {
+	else if (this.size === "Large") {
 		this.price = this.price + 25;
 	}
 	if (numberToppings.length <= 3) {
 		this.price = this.price + 0;
 	}
-	else {
+	else if (numberToppings.length > 3) {
 		for (var index = 0; index < numberToppings.length - 3; index += 1) {
 			this.price = this.price + 1;
 		}
@@ -44,7 +44,14 @@ $(document).ready(function() {
 
 		newOrder = new Order(inputtedName, inputtedAddress, inputtedSize, numberToppings);
 		newOrder.pricing();
-		console.log(newOrder);
+		$("#show-name").text("Your Name: " + newOrder.name);
+		$("#show-address").text("Your Address: " + newOrder.address);
+		$("#show-size").text("Size: " + newOrder.size);
+		$("#show-toppings").text("Toppings: " + newOrder.toppings);
+		$("#show-price").text("Price: " + newOrder.price);
+	});
 
+	$("#place-order").click(function() {
+		location.reload();
 	});
 });

@@ -1,5 +1,39 @@
 body {
-  background-image: url("../img/pizza.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url("../img/background.jpg");
+}
+
+.jumbotron h1 {
+	color: black;
+	font-size: 100px;
+}
+
+.jumbotron h2 {
+	color: #e12301;
+	font-size: 40px;
+}
+
+.jumbotron {
+	background-color: rgba(255, 250, 138, .9);
+	text-align: center;
+}
+
+#order-form {
+	background-color: rgba(255, 250, 138, .9);
+	padding: 35px;
+	margin: 0px 25px 0px 25px;
+	color: #e12301;
+}
+
+#results-col {
+	background-color: rgba(255, 250, 138, .9);
+	padding: 35px;
+	margin: 0px 15px;
+	color: #e12301;
+	line-height: 2;
+	font-size: 16px;
+}
+
+.btn {
+	background-color: #ce0000;
+	color: white;
 }
