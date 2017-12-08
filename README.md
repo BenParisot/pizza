@@ -32,7 +32,7 @@ The program specs are as follows:
 
 ## Viewing Project On Github Pages
 
-Visit https://benparisot.github.io/pingpong/ to view this project on Github Pages.
+Visit https://benparisot.github.io/pizza/ to view this project on Github Pages.
 
 ## Support and contact details
 
